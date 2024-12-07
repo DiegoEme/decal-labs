@@ -1,0 +1,13 @@
+[Unit]
+Description=just learning
+Requires=network.target
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/home/diego/decal/lab03/decal-labs/4/run
+User=root
+Restart=always
+RestartSec=10
